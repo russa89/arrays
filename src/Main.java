@@ -29,7 +29,7 @@ public class Main {
         System.out.println(Arrays.toString(numbers));
         //array 1
 
-        for (double i = 0; i < numbers1.length; i++) {
+        for (int i = 0; i < numbers1.length; i++) {
             double b = numbers1[0];
             numbers1[0] = numbers1[numbers.length - 1];
             numbers1[numbers.length - 1] = b;
