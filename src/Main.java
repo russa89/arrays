@@ -21,18 +21,18 @@ public class Main {
         System.out.println();
 
         System.out.println("Задание 3");
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length / 2; i++) {
             int a = numbers[0];
-            numbers[0] = numbers[numbers.length - 1];
-            numbers[numbers.length - 1] = a;
+            numbers[0] = numbers[numbers.length - i - 1];
+            numbers[numbers.length - i - 1] = a;
         }
         System.out.println(Arrays.toString(numbers));
         //array 1
 
-        for (int i = 0; i < numbers1.length; i++) {
+        for (int i = 0; i < numbers1.length / 2 ; i++) {
             double b = numbers1[0];
-            numbers1[0] = numbers1[numbers.length - 1];
-            numbers1[numbers.length - 1] = b;
+            numbers1[0] = numbers1[numbers.length - i - 1];
+            numbers1[numbers.length - i - 1] = b;
         }
         System.out.println(Arrays.toString(numbers1));
         //array 2
@@ -48,8 +48,8 @@ public class Main {
             int a = numbers[0];
             numbers[0] = numbers[numbers.length - 1];
             numbers[numbers.length - 1] = a;
-            if (numbers[0] % 2 != 0) {
-                numbers[0] = numbers[0] + 1;
+            if (numbers[i] % 2 != 0) {
+                numbers[i] = numbers[i] + 1;
             }
         }
         System.out.println(Arrays.toString(numbers));
