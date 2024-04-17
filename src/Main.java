@@ -45,9 +45,6 @@ public class Main {
 
         System.out.println("Задание 4");
         for (int i = 0; i < numbers.length; i++) {
-            int a = numbers[0];
-            numbers[0] = numbers[numbers.length - 1];
-            numbers[numbers.length - 1] = a;
             if (numbers[i] % 2 != 0) {
                 numbers[i] = numbers[i] + 1;
             }
